@@ -150,4 +150,4 @@ As explained in `day1.md`, multi-threading is crucial for:
 - Multi-threading allows the chef and waiter to work simultaneously, demonstrating the power of concurrency in Java.
 - The documentation highlights real-world applications, emphasizing why multi-threading is a critical skill for Java developers.
 
-If you have further questions or want to explore specific aspects (e.g., thread synchronization, handling interruptions, or real-world examples), let me know!
+If you have further questions or want to explore specific aspects (e.g., thread synchronization, handling interruptions, or real-world examples), let me know!`
