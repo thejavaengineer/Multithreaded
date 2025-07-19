@@ -1,9 +1,4 @@
 ### Multi-Threading Sequence Diagram in Mermaid
-
-To visualize the multi-threading example from the Java code (Chef preparing soup, Waiter serving soup, and the main Driver managing them), I've created a Mermaid sequence diagram. This shows the concurrent execution of the threads.
-
-You can copy the following Mermaid code block into your Markdown (.md) file. GitHub will render it automatically as a diagram when you view the file.
-
 ```mermaid
 sequenceDiagram
     participant Main as Main Thread (Driver)
@@ -46,4 +41,8 @@ sequenceDiagram
     - Finally, Main prints the completion message.
 - This diagram highlights the concurrency: Chef and Waiter run simultaneously, unlike a single-threaded sequential flow.
 
-Paste this into your MD file on GitHub, and it should render nicely. If you need adjustments (e.g., a different diagram type like a flowchart), let me know!
+### Note
+- Kyun Order Change Hota Hai? 
+- Thread Scheduling: Java (ya Python, jaisa maine simulate kiya) mein threads ko OS (operating system) manage karta hai. Scheduler decide karta hai ki kis thread ko kab CPU time mile. Yeh non-deterministic hota hai, matlab har run mein order alag ho sakta hai. 
+- No Synchronization: Is code mein Chef aur Waiter ke loops independent hain—koi lock, wait, ya signal nahi hai jo ensure kare ki prepare hone ke baad hi serve ho. Toh, outputs interleave ho sakte hain jaise bhi scheduler chahe. 
+- Sleep(1000): Yeh sirf simulate karne ke liye hai, lekin real mein bhi, agar ek thread thoda slow ho (jaise system load ki wajah se), dusra aage nikal sakta hai.
